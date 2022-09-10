@@ -1,5 +1,28 @@
 {
-    "name": "hexo-card-links",
-    "version": "0.0.1",
-    "main": "index"
+  "name": "hexo-card-links",
+  "version": "0.0.2",
+  "main": "index",
+  "description": "Hexo plugin to add flexible cards with links to display various posts.",
+  "dependencies": {
+    "hexo-fs": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ilya122/hexo-card-links.git"
+  },
+  "keywords": [
+    "hexo",
+    "cards",
+    "links"
+  ],
+  "author": "SimplyCode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ilya122/hexo-card-links/issues"
+  },
+  "homepage": "https://github.com/Ilya122/hexo-card-links#readme"
 }
