@@ -35,16 +35,3 @@ hexo.extend.tag.register('cardlink', (args) => {
                 </div>
             </div>`;
 });
-
-hexo.extend.generator.register('card-links-assets', () => [{
-    path: 'assets/cards.css',
-    data: function() {
-        return fs.createReadStream(path.resolve(path.resolve(__dirname, "./assets"), 'cards.css'));
-    }
-}]);
-
-hexo.extend.filter.register('after_post_render', (data) => {
-    let link_css = `<link rel="stylesheet" href="${hexo.config.root}assets/cards.css" type="text/css">`;
-    data.content += link_css;
-    return data;
-});
