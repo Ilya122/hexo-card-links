@@ -1,4 +1,17 @@
-const PostLink = require('hexo/lib/plugins/tag/post_link');
+let PostLink = null;
+
+try {
+    // Try requiring the module from the first path.
+    PostLink = require('hexo/lib/plugins/tag/post_link');
+} catch (error) {
+    // If requiring the module from the first path fails, then require it from the second path.
+    if (error.code === 'MODULE_NOT_FOUND') {
+        PostLink = require('hexo/dist/plugins/tag/post_link');
+    } else {
+        // If there's any other error, re-throw it.
+        throw error;
+    }
+}
 
 'use strict';
 
