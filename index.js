@@ -1,5 +1,3 @@
-const fs = require('hexo-fs');
-const path = require('path');
 const PostLink = require('hexo/lib/plugins/tag/post_link');
 
 'use strict';
