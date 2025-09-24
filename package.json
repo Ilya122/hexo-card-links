@@ -1,6 +1,6 @@
 {
   "name": "hexo-card-links",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index",
   "description": "Hexo plugin to add flexible cards with links to display various posts.",
   "dependencies": {
